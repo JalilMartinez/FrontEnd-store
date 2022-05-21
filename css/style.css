@@ -64,13 +64,17 @@ h3{
     padding: 1rem 0;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 2rem;/*forma nueva de separacion*/
+
 }
 .navegacion__enlace{
     font-family: var(--fuentePrincipal);
     font-size: 3rem;
     color: var(--blanco);
-    
+    margin-right: 2rem;
+}
+.navegacion__enlace:last-of-type{ /*selecciona ultimo elemento de navegacion__enlace*/
+    margin-right: 0;
 }
 .navegacion__enlace--activo, .navegacion__enlace:hover {
     color: var(--secundario);
