@@ -192,3 +192,51 @@ h3{
 .bloque__imagen{
     width: 100%;
 }
+/*producto*/
+.camisa__imagen{
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .camisa{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+.formulario{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.formulario__campo{
+    /*border-color: var(--primarioOscuro);
+    border-width: 1rem;
+    border-style: solid;*/
+    border: 1rem solid var(--primarioOscuro);/*simplificado*/
+    background-color: transparent;
+    color: var(--blanco);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    appearance: none;
+    max-width: 100%;
+}
+.formulario__submit{
+    max-width: 100%;
+    background-color: var(--secundario);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    padding: 2rem;
+    transition: background-color .5s ease;/*efecto transicion*/
+    grid-column: 1/3;
+}
+.formulario__submit:hover{
+    cursor: pointer;
+    background-color: var(--secundarioOscuro);
+}
+.opcion{
+    color: var(--negro);
+}
